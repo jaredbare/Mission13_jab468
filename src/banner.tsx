@@ -6,7 +6,7 @@ function TopBanner(props: any) {
     <React.Fragment>
       <div className="row">
         <div className="col-2">
-          <img src="./logo192.png" alt="companyLogo" />
+          <img src="./logo192.png" alt="companyLogo" width="64" height="64" />
         </div>
         <div className="col align-self-center text-start">
           <h1>{props.text}</h1>
