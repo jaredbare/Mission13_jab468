@@ -5,6 +5,7 @@ import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import TopBanner from './banner';
 import MovieList from './movies';
 import PodcastPage from './podcasts';
+import ApiMovieList from './movie/MovieList';
 import HomePage from './home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -46,6 +47,11 @@ function App() {
                     Podcasts
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/api">
+                    ApiMovieList
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -55,6 +61,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/movies" element={<MovieList />} />
           <Route path="/podcasts" element={<PodcastPage />} />
+          <Route path="/api" element={<ApiMovieList />} />
         </Routes>
       </div>
     </BrowserRouter>
